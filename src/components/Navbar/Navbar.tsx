@@ -16,7 +16,7 @@ const Navbar: React.FC<Props> = () => {
     }, []);
 
     const links = <>
-    <li className='hover:text-[#007BFF]'><NavLink to='/home'>Home</NavLink> </li>
+    <li className='hover:text-[#007BFF]'><NavLink to='/'>Home</NavLink> </li>
     <li className='hover:text-[#007BFF]'><NavLink to='/about'>About</NavLink> </li>
     <li className='hover:text-[#007BFF]'><NavLink to='/applied'>Services</NavLink></li>
     <li className='hover:text-[#007BFF]'><NavLink to='/statistics'>Client</NavLink></li>
