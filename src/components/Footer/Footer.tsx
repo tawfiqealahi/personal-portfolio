@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
 type Props = {};
 
@@ -8,13 +7,22 @@ const Footer: React.FC<Props> = () => {
     <div>
         <footer className="footer footer-center  text-base-content rounded p-10">
   <nav className="grid grid-flow-col gap-4">
-  
-  <NavLink to='/'>Home</NavLink> 
-  <NavLink to='/jobs'>Jobs</NavLink> 
-  <NavLink to='/applied'>Applied Jobs</NavLink>
-  <NavLink to='/statistics'>Statistics</NavLink>
-  <NavLink to='/blog'>Blog</NavLink>
-  <NavLink to='/portfolio'>Portfolio</NavLink>
+  <li className="hover:text-[#007BFF]">
+        <a href="#banner">Home</a>
+      </li>
+      <li className="hover:text-[#007BFF]">
+        <a href="#about">About</a>
+      </li>
+      <li className="hover:text-[#007BFF]">
+        <a href="#services">Services</a>
+      </li>
+      <li className="hover:text-[#007BFF]">
+        <a href="#client">Client</a>
+      </li>
+     
+      <li className="hover:text-[#007BFF]">
+        <a href="#contact">Contact</a>
+      </li>
   </nav>
   <nav>
     <div className="grid grid-flow-col gap-4">

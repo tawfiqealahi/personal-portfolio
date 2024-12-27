@@ -4,6 +4,7 @@ import Banner from '../Banner/Banner';
 import About from '../About/About';
 import Services from './../Services/Services';
 import Client from '../Client/Client';
+import Contact from '../Contact/Contact';
 
 type Props = {};
 
@@ -14,9 +15,8 @@ const Home: React.FC<Props> = () => {
             <div id="about ">  <About></About>        </div>
             <div id="services ">  <Services></Services> </div>
             <div id="client "> <Client></Client> </div>
-            <div id="Portfolio">  </div>
-            <div id="blog">  </div>
-            <div id="contact">  </div>
+          
+            <div id="contact"> <Contact></Contact>  </div>
             <Footer></Footer>
 
         </div>

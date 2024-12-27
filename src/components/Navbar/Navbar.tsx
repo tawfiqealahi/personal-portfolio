@@ -27,12 +27,7 @@ const Navbar: React.FC<Props> = () => {
       <li className="hover:text-[#007BFF]">
         <a href="#client">Client</a>
       </li>
-      <li className="hover:text-[#007BFF]">
-        <a href="#portfolio">Portfolio</a>
-      </li>
-      <li className="hover:text-[#007BFF]">
-        <a href="#blog">Blog</a>
-      </li>
+     
       <li className="hover:text-[#007BFF]">
         <a href="#contact">Contact</a>
       </li>
