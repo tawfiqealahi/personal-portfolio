@@ -7,7 +7,7 @@ type Props = {};
 
 const Contact: React.FC<Props> = () => {
     return (
-        <div className='text-center'>
+        <div className='text-center pt-20'>
             <h1 className="text-5xl  font-bold">Contact</h1>
             <p className="my-10">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
 
