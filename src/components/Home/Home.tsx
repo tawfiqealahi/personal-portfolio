@@ -1,10 +1,13 @@
 import React from 'react';
+import Banner from '../Banner/Banner';
 
 type Props = {};
 
 const Home: React.FC<Props> = () => {
   return (
-    <div>Home</div>
+    <div className=''>
+        <Banner></Banner>
+    </div>
   );
 };
 

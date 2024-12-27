@@ -1,23 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 
 type Props = {};
 
 const Navbar: React.FC<Props> = () => {
+
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => setScrolled(window.scrollY > 50);
+      window.addEventListener('scroll', handleScroll);
+
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     const links = <>
-    <li><NavLink to='/'>Home</NavLink> </li>
-    <li><NavLink to='/jobs'>About</NavLink> </li>
-    <li><NavLink to='/applied'>Services</NavLink></li>
-    <li><NavLink to='/statistics'>Client</NavLink></li>
-    <li><NavLink to='/blog'>Portfolio</NavLink></li>
-    <li><NavLink to='/portfolio'>Blog</NavLink></li>
-    <li><NavLink to='/portfolio'>Contact</NavLink></li>
+    <li className='hover:text-[#007BFF]'><NavLink to='/home'>Home</NavLink> </li>
+    <li className='hover:text-[#007BFF]'><NavLink to='/about'>About</NavLink> </li>
+    <li className='hover:text-[#007BFF]'><NavLink to='/applied'>Services</NavLink></li>
+    <li className='hover:text-[#007BFF]'><NavLink to='/statistics'>Client</NavLink></li>
+    <li className='hover:text-[#007BFF]'><NavLink to='/blog'>Portfolio</NavLink></li>
+    <li className='hover:text-[#007BFF]'><NavLink to='/portfolio'>Blog</NavLink></li>
+    <li className='hover:text-[#007BFF]'><NavLink to='/portfolio'>Contact</NavLink></li>
     </>
   return (
-    <div>
+    <div  className=''>
       {/* navbar  start*/}
-      <div className="navbar bg-base-100">
+      <div  className={`navbar  fixed top-0 left-1/2 transform -translate-x-1/2  transition-all duration-300 ${
+          scrolled ? 'bg-black shadow-xl' : 'bg-transparent'
+        }  container mx-auto `}>
         <div className="navbar-start  ">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -40,7 +52,7 @@ const Navbar: React.FC<Props> = () => {
               {links}
             </ul>
           </div>
-          <NavLink to='/'><a className="btn btn-ghost md:text-6xl text-primary pointer-events-none font-extrabold">
+          <NavLink to='/'><a className="btn btn-ghost text-3xl md:text-6xl text-[#007BFF] pointer-events-none font-extrabold">
             <TypeAnimation
             preRenderFirstString={true}
             sequence={[
@@ -55,12 +67,12 @@ const Navbar: React.FC<Props> = () => {
              </a></NavLink>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu  menu-horizontal px-1">
             {links}
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn btn-primary">Apply Now</a>
+          <a className="btn  text-white text-lg bg-[#007BFF]">Download CV</a>
         </div>
       </div>
       {/* navbar end */}
