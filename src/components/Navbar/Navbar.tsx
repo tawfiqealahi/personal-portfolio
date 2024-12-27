@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { TypeAnimation } from 'react-type-animation';
 
 type Props = {};
 
@@ -16,20 +15,35 @@ const Navbar: React.FC<Props> = () => {
     }, []);
 
     const links = <>
-    <li className='hover:text-[#007BFF]'><NavLink to='/'>Home</NavLink> </li>
-    <li className='hover:text-[#007BFF]'><NavLink to='/about'>About</NavLink> </li>
-    <li className='hover:text-[#007BFF]'><NavLink to='/applied'>Services</NavLink></li>
-    <li className='hover:text-[#007BFF]'><NavLink to='/statistics'>Client</NavLink></li>
-    <li className='hover:text-[#007BFF]'><NavLink to='/blog'>Portfolio</NavLink></li>
-    <li className='hover:text-[#007BFF]'><NavLink to='/portfolio'>Blog</NavLink></li>
-    <li className='hover:text-[#007BFF]'><NavLink to='/portfolio'>Contact</NavLink></li>
+     <li className="hover:text-[#007BFF]">
+        <a href="#banner">Home</a>
+      </li>
+      <li className="hover:text-[#007BFF]">
+        <a href="#about">About</a>
+      </li>
+      <li className="hover:text-[#007BFF]">
+        <a href="#services">Services</a>
+      </li>
+      <li className="hover:text-[#007BFF]">
+        <a href="#client">Client</a>
+      </li>
+      <li className="hover:text-[#007BFF]">
+        <a href="#portfolio">Portfolio</a>
+      </li>
+      <li className="hover:text-[#007BFF]">
+        <a href="#blog">Blog</a>
+      </li>
+      <li className="hover:text-[#007BFF]">
+        <a href="#contact">Contact</a>
+      </li>
+      
     </>
   return (
-    <div  className=''>
+    <div  className='h-20 '>
       {/* navbar  start*/}
-      <div  className={`navbar  fixed top-0 left-1/2 transform -translate-x-1/2  transition-all duration-300 ${
+      <div  className={`navbar   fixed top-0 left-1/2 transform -translate-x-1/2  transition-all duration-300 ${
           scrolled ? 'bg-black shadow-xl' : 'bg-transparent'
-        }  container mx-auto `}>
+        }  container mx-auto z-10 `}>
         <div className="navbar-start  ">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -53,17 +67,7 @@ const Navbar: React.FC<Props> = () => {
             </ul>
           </div>
           <NavLink to='/'><a className="btn btn-ghost text-3xl md:text-6xl text-[#007BFF] pointer-events-none font-extrabold">
-            <TypeAnimation
-            preRenderFirstString={true}
-            sequence={[
-                'Tawfiq',500,
-                'TawfiqAlahi',500,
-                '',500,
-            ]} 
-            
-            // style={{}}
-            repeat={Infinity}
-            ></TypeAnimation>
+           TawfiqAlahi 
              </a></NavLink>
         </div>
         <div className="navbar-center hidden lg:flex">

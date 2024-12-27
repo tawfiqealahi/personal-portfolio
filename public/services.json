@@ -1,0 +1,27 @@
+[
+    {
+        "icon": "BsGraphUpArrow",
+        "title": "Custom Web Development",
+        "description": "We offer tailored web development solutions to meet your unique business needs."
+    },
+    {
+        "icon": "BsCupHot",
+        "title": "Responsive Design",
+        "description": "Designs that ensure your website looks great on any device, from desktop to mobile."
+    },
+    {
+        "icon": "IoCloudUploadOutline",
+        "title": "Frontend Optimization",
+        "description": "Optimizing your frontend for better performance and a smooth user experience."
+    },
+    {
+        "icon": "BsCupHot",
+        "title": "React.js Consulting",
+        "description": "Expert consulting to help you leverage React.js for scalable and efficient applications."
+    },
+    {
+        "icon": "BsCupHot",
+        "title": "Full-Stack Development",
+        "description": "End-to-end development services, integrating both frontend and backend technologies."
+    }
+]
