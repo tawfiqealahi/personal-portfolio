@@ -71,7 +71,7 @@ const Navbar: React.FC<Props> = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn  text-white text-lg bg-[#007BFF]">Download CV</a>
+          <a href='https://drive.google.com/file/d/13G-I_q-45CuD2R7O9hgkTICeghhFGVoC/view?usp=sharing' className="btn  text-white text-lg bg-[#007BFF]">Download CV</a>
         </div>
       </div>
       {/* navbar end */}

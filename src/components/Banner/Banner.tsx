@@ -37,7 +37,7 @@ const Banner: React.FC<Props> = () => {
       <p className="mb-5">
       It is a long established fact that a reader will be of a page when established fact looking at its layout.
       </p>
-      <a className="btn text-white text-lg mt-24 bg-[#007BFF]">Download CV</a>
+      <a href='https://drive.google.com/file/d/13G-I_q-45CuD2R7O9hgkTICeghhFGVoC/view?usp=sharing' className="btn text-white text-lg mt-24 bg-[#007BFF]">Download CV</a>
       </div>
   </div>
 </div>  );
